@@ -12,10 +12,11 @@
 	{% for contact in object_list %}
 		<li class="contact">
 			{{ contact }}
+			(<a href="{% url "contacts-edit" pk=contact.id %}">edit</a>)
 		</li>
 
 	{% endfor %}
 </ul>
 
-<a href="{% url "contact-new" %}">Add New Contact</a>
+<a href="{% url "contacts-new" %}">Add Contact</a>
 {% endblock %}
