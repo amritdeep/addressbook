@@ -1,0 +1,17 @@
+{% load staticfiles %}
+<html>
+	<head>
+		<title>
+			{% block title %}{% endblock %}
+		</title>
+
+		<link rel="stylesheet" type="text/css" href="{% static 'dist/css/bootstrap.min.css' %}">
+		
+	</head>
+	<body>
+		{% block content %}
+		{endblock}
+		
+		<script type="text/javascript" src="{% static 'dist/js/bootstrap.min.js' %}"></script>
+	</body>
+</html>
